@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
+        <div> 
+            <label for="a-account">帳號</label>
+            <input type="text" name="account" id="f-account" value="" placeholder="請輸入帳號">
+        </div>
+
+        <div>
+            <label for="a-password">密碼</label>
+            <input type="password" name="password" id="f-password" placeholder="請輸入密碼">
+        </div>
+
+        <div>
+            <label for="a-color">顏色</label>
+            <input type="color" name="顏色" id="f-color" placeholder="請輸入顏色">
+        </div>
+
+        <div>
+            <input type="date" name="date" placeholder="請輸入電話">
+        </div>
+
+        <div>
+            <input type="time" name="time" placeholder="請輸入顏色">
+        </div>
+
+        <select name="county[]" multiple>
+            <option value="">選擇縣市</option>
+            <option value="tp">台北</option>
+            <option value="tc">台中</option>
+            <option value="ks">高雄</option>
+        </select>
+        <div>
+            <textarea name="remark" cols="50" rows="10"style="resize:none;" ></textarea>
+        </div>
+
+        <div>
+        <button type="submit">發送</button>
+        <button type="button">預覽</button>
+        </div>
+
+</body>
+
+</html>
