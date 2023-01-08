@@ -1,0 +1,18 @@
+.box{
+    width: 500px;
+    height: 100px;
+    line-height: 80px;
+    background: rgb(201 183 183 / 93%);
+    text-align: center;
+    margin: auto;
+    border: 2px solid rgb(143, 111, 111);
+    padding: 10px; 
+    box-sizing: border-box;
+    /* word-break: break-all; */
+    color: rgb(60 90 60);
+    font-size: 80px;
+    font-weight: 500;
+    font-family:'Moon Dance', cursive;
+    background-size: contain;
+    background-image:url(../images/rose.jpg)
+}
