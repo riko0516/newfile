@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.face{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.411);
+}
+
+.circle{
+    position: absolute;
+    margin: 10px;
+    background: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+}
+
+.point{    
+    position: absolute;
+    margin-top: 10px;
+    background: #030303;
+    width: 20px;
+    height: 20px;
+    border-radius: 60px;
+}
+
+.left{
+    right: -50%;
+    top: -50%;
+}
+.rigth{
+
+}
+
+.mouth{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 50px;
+    background: rgba(255, 255, 255, 0.411);
+    margin-bottom: -25px;
+}
