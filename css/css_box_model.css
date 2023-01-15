@@ -44,6 +44,16 @@
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 5px;
+    border-right: 2px solid #1b41aa;
+    border-bottom: 2px solid #1b41aa;
+}
+
+.block {
+    background: rgb(59, 52, 52);
+    color: #fff;
+    height: 100px;
+    overflow-y: hidden;
+    margin: 20px auto;
 }
 
 .circle{
@@ -51,4 +61,13 @@
     height: 100px;
     border-radius: 100px;
     background-color: #d5d0c9;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.none {
+    display: none;
+    visibility: hidden;
 }
