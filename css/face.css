@@ -6,44 +6,64 @@
     box-sizing: border-box;
 }
 
-.face{
-    position: absolute;
-    width: 200px;
-    height: 200px;
+.face {
+    width: 500px;
+    height: 500px;
     background: rgba(0, 0, 0, 0.411);
+
+    position: relative;
 }
 
-.circle{
-    position: absolute;
-    margin: 10px;
-    background: #ffffff;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-}
-
-.point{    
-    position: absolute;
-    margin-top: 10px;
-    background: #030303;
-    width: 20px;
-    height: 20px;
-    border-radius: 60px;
-}
-
-.left{
-    right: -50%;
-    top: -50%;
-}
-.rigth{
-
-}
-
-.mouth{
-    position: absolute;
+.circle {
     width: 100px;
+    height: 100px;
+    background: #ffffff;
+    border-radius: 100px;
+    position: absolute;
+    top:10%;
+}
+
+.left {
+    left: 30%;}
+
+.rigth {
+    right: 30%;}
+
+.point {
+    width: 50px;
     height: 50px;
-    left: 50px;
-    background: rgba(255, 255, 255, 0.411);
-    margin-bottom: -25px;
+    background: #030303;
+    border-radius: 50px;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+.mouth {
+    width: 200px;
+    height: 80px;
+    background: rgba(189, 86, 86, 0.411);
+    position: absolute;
+
+    top: 50%;
+    left: 20%;
+    margin-left: -100px;
+    margin-top: -100px;
+    overflow: hidden;
+}
+
+.tought {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: red;
+    position: absolute;
+
+    top: 50%;
+    left: 20%;
+    margin-left: -100px;
+    margin-top:-100px;
 }
