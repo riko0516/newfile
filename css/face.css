@@ -24,7 +24,7 @@
 }
 
 .left {
-    left: 30%;}
+    left: 25%;}
 
 .rigth {
     right: 30%;}
@@ -49,9 +49,9 @@
     position: absolute;
 
     top: 50%;
-    left: 20%;
-    margin-left: -100px;
-    margin-top: -100px;
+    margin-top: -40px;
+    right: 40%;
+    margin-right: -100px;
     overflow: hidden;
 }
 
