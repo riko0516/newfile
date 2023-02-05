@@ -1,0 +1,20 @@
+@import 'reset';
+
+.say-hi {
+    padding: 10xp;
+
+    &::before {
+        content: 'David';
+        color: red;
+        font-size: 20px;
+        width: 200px;
+        height: 200px;
+        background: yellow;
+        display: inline-block;
+    }
+
+    &::after {
+        content: 'after';
+        color: blue;
+    }
+}

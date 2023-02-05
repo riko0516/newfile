@@ -17,3 +17,67 @@
         color: #fff;
     }
 }
+
+.large-checked:checked {
+    width: 200px;
+    height: 200px;
+}
+
+.block {
+    .item {
+        color: red;
+    }
+
+    :not(.item) {
+        color: #000;
+    }
+}
+
+.nth-child {
+    width: 80%;
+    background: #fff;
+    margin: 10px auto;
+    list-style-type: none;
+
+    li {
+        height: 50px;
+        background: blue;
+        color: #fff;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+
+        &:nth-child(2) {
+            color: red;
+            justify-content: center;
+        }
+    }
+}
+
+.student {
+    width: 80%;
+    margin: 10px auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    td,
+    th {
+        border: 1px solid#000;
+        padding: 10px;
+    }
+
+    tbody {
+        tr:nth-child(even) {
+            td {
+                background: #dedede;
+            }
+        }
+
+        tr:last-child {
+            td {
+                background: yellow;
+            }
+        }
+    }
+}
