@@ -1,0 +1,24 @@
+@import 'reset';
+
+.accrodion {
+    margin: 20px auto;
+
+    .tab {
+        border: 1px solid blue;
+
+        >label {
+            display: flex;
+            background: rgb(83, 83, 234);
+            color: #fff;
+            padding: 12px;
+            font-size: 26px;
+            font-weight: 700;
+            font-family: monospace;
+
+        }
+
+        .tab-content {
+            padding: 10px;
+        }
+    }
+}

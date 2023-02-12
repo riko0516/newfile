@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.accrodion {
+  margin: 20px auto;
+}
+.accrodion .tab {
+  border: 1px solid blue;
+}
+.accrodion .tab > label {
+  display: flex;
+  background: rgb(83, 83, 234);
+  color: #fff;
+  padding: 12px;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: monospace;
+}
+.accrodion .tab .tab-content {
+  padding: 10px;
+}/*# sourceMappingURL=accrodion.css.map */
