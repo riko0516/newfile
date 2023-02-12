@@ -27,7 +27,19 @@
   font-size: 26px;
   font-weight: 700;
   font-family: monospace;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.accrodion .tab > label:hover {
+  background: orange;
 }
 .accrodion .tab .tab-content {
   padding: 10px;
+  display: none;
+}
+.accrodion .tab > input:checked + .tab-content {
+  display: block;
 }/*# sourceMappingURL=accrodion.css.map */

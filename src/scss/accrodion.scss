@@ -15,10 +15,59 @@
             font-weight: 700;
             font-family: monospace;
 
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                background: orange;
+            }
+
         }
 
         .tab-content {
             padding: 10px;
+            display: none;
         }
+
+        >input:checked+.tab-content {
+            display: block;
+        }
+
     }
 }
+
+
+
+
+
+
+
+// .accrodion {
+//     margin: 20px auto;
+
+//     .tab> {
+//         border: 1px solid blue;
+
+//         .tab-content {
+//             padding: 10px;
+//         }
+
+//         label {
+//             display: flex;
+//             background: rgb(83, 83, 234);
+//             color: #fff;
+//             padding: 12px;
+//             font-size: 26px;
+//             font-weight: 700;
+//             font-family: monospace;
+
+//             cursor: pointer;
+//             user-select: none;
+
+//             &:hover {
+//                 background: orange;
+//             }
+//         }
+
+//     }
+// }
