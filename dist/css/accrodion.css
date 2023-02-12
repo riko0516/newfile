@@ -17,14 +17,17 @@
   margin: 20px auto;
 }
 .accrodion .tab {
-  border: 1px solid blue;
+  border: 3px solid rgb(19, 19, 20);
+  border-bottom-width: 0;
+}
+.accrodion .tab:last-child {
+  border-bottom-width: 3px;
 }
 .accrodion .tab > label {
   display: flex;
   background: rgb(83, 83, 234);
   color: #fff;
   padding: 12px;
-  font-size: 26px;
   font-weight: 700;
   font-family: monospace;
   cursor: pointer;
@@ -32,14 +35,34 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.accrodion .tab > label > div {
+  font-size: 26px;
 }
 .accrodion .tab > label:hover {
   background: orange;
+}
+.accrodion .tab > label .close-icon {
+  display: none;
 }
 .accrodion .tab .tab-content {
   padding: 10px;
   display: none;
 }
-.accrodion .tab > input:checked + .tab-content {
+.accrodion .tab .tab-swich:checked + label {
+  background: orange;
+}
+.accrodion .tab .tab-swich:checked + label .open-icon {
+  display: none;
+}
+.accrodion .tab .tab-swich:checked + label .close-icon {
   display: block;
+}
+.accrodion .tab .tab-swich:checked ~ .tab-content {
+  display: block;
+}
+.accrodion .tab .tab-switch {
+  display: none;
 }/*# sourceMappingURL=accrodion.css.map */

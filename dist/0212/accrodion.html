@@ -11,18 +11,51 @@
 
 <body>
     <div class="container">
+        <h1>多個展開</h1>
         <div class="accrodion">
             <div class="tab">
-                <label for="tab-1">one</label>
-                <input type="checkbox" id="tab-1">
+                <input type="checkbox" id="tab-1" class="tab-switch">
+                <label for="tab-1">
+                    <div>one</div>
+                    <div class="open-icon">+</div>
+                    <div class="close-icon">-</div>
+                </label>
                 <div class="tab-content">hello 1</div>
             </div>
             <div class="tab">
-                <label for="tab-2">two</label>
-                <input type="checkbox" id="tab-2">
+                <input type="checkbox" id="tab-2" class="tab-switch">
+                <label for="tab-2">
+                    <div>two</div>
+                    <div class="open-icon">+</div>
+                    <div class="close-icon">-</div>
+                </label>
                 <div class="tab-content">hello 2</div>
             </div>
         </div>
+
+        <h1>單個展開</h1>
+        <div class="accrodion">
+            <div class="tab">
+                <input type="radio" id="tab-1" name="s" class="tab-switch">
+                <label for="tab-1">
+                    <div>one</div>
+                    <div class="open-icon">+</div>
+                    <div class="close-icon">-</div>
+                </label>
+                <div class="tab-content">hello 1</div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab-2" name="s" class="tab-switch">
+                <label for="tab-2">
+                    <div>two</div>
+                    <div class="open-icon">+</div>
+                    <div class="close-icon">-</div>
+                </label>
+                <div class="tab-content">hello 2</div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 
@@ -30,27 +63,25 @@
 
 
 
-
-
 <!-- <body>
-                <div class="container">
-                    <div class="accrodion">
-                        <div class="tab">
-                            <input type="checkbox" id="tab-1">
-                            <label for="tab-1">one</label>
+    <div class="container">
+        <div class="accrodion">
+            <div class="tab">
+                <input type="checkbox" id="tab-1">
+                <label for="tab-1">one</label>
 
-                            <div class="tab-content">
-                                <input type="text">
-                                <label for="">999</label>
-                            </div>
+                <div class="tab-content">
+                    <input type="text">
+                    <label for="">999</label>
+                </div>
 
-                        </div>
-                        <div class="tab">
-                            <input type="checkbox" id="tab-2">
-                            <label for="tab-2">two</label>
-                            <div class="tab-content">hello 2</div>
-                        </div>
-                    </div>
-            </body> --> -->
+            </div>
+            <div class="tab">
+                <input type="checkbox" id="tab-2">
+                <label for="tab-2">two</label>
+                <div class="tab-content">hello 2</div>
+            </div>
+        </div>
+</body> -->
 
 </html>

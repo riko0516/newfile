@@ -4,22 +4,36 @@
     margin: 20px auto;
 
     .tab {
-        border: 1px solid blue;
+        border: 3px solid rgb(19, 19, 20);
+        border-bottom-width: 0;
+
+        &:last-child {
+            border-bottom-width: 3px;
+        }
 
         >label {
             display: flex;
             background: rgb(83, 83, 234);
             color: #fff;
             padding: 12px;
-            font-size: 26px;
             font-weight: 700;
             font-family: monospace;
 
             cursor: pointer;
             user-select: none;
+            justify-content: space-between;
+            align-items: center;
+
+            >div {
+                font-size: 26px;
+            }
 
             &:hover {
                 background: orange;
+            }
+
+            .close-icon {
+                display: none;
             }
 
         }
@@ -29,13 +43,34 @@
             display: none;
         }
 
-        >input:checked+.tab-content {
-            display: block;
+        .tab-swich:checked {
+            +label {
+                background: orange;
+
+                .open-icon {
+                    display: none;
+                }
+
+                .close-icon {
+                    display: block;
+                }
+            }
+
+            ~.tab-content {
+                display: block;
+            }
         }
 
+        // >input [type=radio],
+        // >input [type=checkbox] {
+        //     display: none;
+        // }
+
+        .tab-switch {
+            display: none;
+        }
     }
 }
-
 
 
 
@@ -45,14 +80,10 @@
 // .accrodion {
 //     margin: 20px auto;
 
-//     .tab> {
+//     .tab {
 //         border: 1px solid blue;
 
-//         .tab-content {
-//             padding: 10px;
-//         }
-
-//         label {
+//         >label {
 //             display: flex;
 //             background: rgb(83, 83, 234);
 //             color: #fff;
@@ -67,6 +98,10 @@
 //             &:hover {
 //                 background: orange;
 //             }
+//         }
+
+//         .tab-content {
+//             padding: 10px;
 //         }
 
 //     }
