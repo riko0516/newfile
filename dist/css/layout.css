@@ -23,6 +23,12 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header .header-content {
   background: #fff;
   display: flex;
   justify-content: space-between;
@@ -38,4 +44,17 @@ body {
 }
 .header .menu li {
   margin-left: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+.header .menu li:first-child {
+  margin-left: 0;
+}
+.header .menu li:hover {
+  color: blue;
+}
+.header .menu .en {
+  font-size: 12px;
+  font-family: monospace;
+  text-transform: uppercase;
 }/*# sourceMappingURL=layout.css.map */
