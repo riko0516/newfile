@@ -71,10 +71,74 @@ a {
     &.primary {
         background: #916464;
         color: #fff;
+
+        &.hover {
+            background-color: #6e09a8;
+        }
+    }
+
+    &.dange {
+        background: rgb(218, 49, 27);
+        color: #fff;
+
+        &.hover {
+            background-color: rgb(172, 33, 15);
+        }
     }
 
 }
 
 .text-right {
-    align-content: ;
+    text-align: right;
+}
+
+.form-control-item {
+    margin-bottom: 15px;
+
+    &.form-control-mixed {
+        position: relative;
+
+        &.after {
+            .form-control {
+                padding-right: 80px;
+            }
+
+            .form-control-append {
+                right: -1px;
+            }
+
+            .button {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+
+        &.before {
+            .form-control {
+                padding-right: 80px;
+            }
+
+            .form-control-append {
+                right: -1px;
+            }
+
+            .button {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
+
+    .form-control-append {
+        position: absolute;
+        top: 0;
+        height: 100%;
+
+        .button {
+            height: 100%;
+            display: inline-block;
+        }
+    }
+
+
 }
