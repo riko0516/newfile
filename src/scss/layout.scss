@@ -9,6 +9,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 9;
 
     .header-content {
         background: #fff;
@@ -55,12 +56,27 @@ body {
     background: #000;
     background-image: url(../images/banner.jpeg);
     background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #00000047;
+        position: absolute;
+        z-index: 1;
+    }
 
     .join-form-content {
         display: flex;
         align-items: center;
         // justify-content: space-between;
         min-height: 100vh;
+        position: relative;
+        z-index: 2;
 
         .content-wrap {
             background: #453789;
@@ -98,5 +114,42 @@ body {
     background-image: url(../images/process.jpeg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #00000047;
+        z-index: 1;
+    }
+
+    .process-wrap {
+        position: relative;
+        z-index: 2;
+        min-height: 50vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+    }
+}
+
+.flow {
+
+    .flow-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flow-circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 50px;
+        background: red;
+    }
 }

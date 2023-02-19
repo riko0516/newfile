@@ -127,6 +127,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9;
 }
 .header .header-content {
   background: #fff;
@@ -164,11 +165,25 @@ body {
   background: #000;
   background-image: url(../images/banner.jpeg);
   background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.join-form::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2784313725);
+  position: absolute;
+  z-index: 1;
 }
 .join-form .join-form-content {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  position: relative;
+  z-index: 2;
 }
 .join-form .join-form-content .content-wrap {
   background: #453789;
@@ -199,5 +214,35 @@ body {
   background-image: url(../images/process.jpeg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.process-flow::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2784313725);
+  z-index: 1;
+}
+.process-flow .process-wrap {
+  position: relative;
+  z-index: 2;
+  min-height: 50vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.flow .flow-item {
+  display: flex;
+  justify-content: center;
+}
+.flow .flow-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+  background: red;
 }/*# sourceMappingURL=layout.css.map */
