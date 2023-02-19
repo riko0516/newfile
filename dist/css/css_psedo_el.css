@@ -70,11 +70,11 @@ a {
 .button.primary.hover {
   background-color: #6e09a8;
 }
-.button.dange {
+.button.danger {
   background: rgb(218, 49, 27);
   color: #fff;
 }
-.button.dange.hover {
+.button.danger.hover {
   background-color: rgb(172, 33, 15);
 }
 
@@ -102,7 +102,7 @@ a {
   padding-right: 80px;
 }
 .form-control-item.form-control-mixed.before .form-control-append {
-  right: -1px;
+  left: 0px;
 }
 .form-control-item.form-control-mixed.before .button {
   border-top-right-radius: 0;
