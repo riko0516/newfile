@@ -236,13 +236,53 @@ body {
   padding-bottom: 40px;
 }
 
+.flow {
+  margin-top: 50px;
+  position: relative;
+  padding: 20px 0;
+}
+.flow::after {
+  content: "";
+  border-left: 6px dashed #fff;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: calc(50% - 3px);
+}
 .flow .flow-item {
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+  margin-bottom: 15px;
+}
+.flow .flow-item:nth-child(even) .flow-text {
+  right: 50%;
+  left: unset;
+  margin-right: 72px;
+  margin-left: unset;
+  text-align: right;
 }
 .flow .flow-circle {
   width: 36px;
   height: 36px;
   border-radius: 50px;
   background: red;
+  position: relative;
+  z-index: 2;
+}
+.flow .flow-text {
+  position: absolute;
+  background: blue;
+  padding: 20px;
+  border-radius: 10px;
+  left: calc(50% + 72px);
+}
+
+.fotter {
+  background: #fff;
+  padding: 50px 0;
+  text-align: right;
 }/*# sourceMappingURL=layout.css.map */
