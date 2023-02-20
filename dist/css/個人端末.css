@@ -119,17 +119,17 @@ a {
 }
 
 body {
-  background: #000;
+  background: brown;
 }
 
 .header {
-  position: fixed;
   top: 0;
   width: 100%;
+  position: fixed;
   z-index: 9;
 }
 .header .header-content {
-  background: #fff;
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,13 +145,13 @@ body {
 .header .menu li {
   margin-left: 10px;
   text-align: center;
-  font-weight: 700;
+  font-size: 700;
 }
 .header .menu li:first-child {
   margin-left: 0;
 }
 .header .menu li:hover {
-  color: blue;
+  color: #fff;
 }
 .header .menu .en {
   font-size: 12px;
@@ -159,129 +159,21 @@ body {
   text-transform: uppercase;
 }
 
-.join-form {
+.traveling-form {
   color: #fff;
   background: #000;
-  background-image: url(../images/banner.jpeg);
+  background-image: url(../images/firstbackground.jpeg);
   background-size: cover;
   position: relative;
   z-index: 1;
 }
-.join-form::after {
+.traveling-form::after {
   content: "";
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.2784313725);
-  position: absolute;
-  z-index: 1;
-}
-.join-form .join-form-content {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  position: relative;
-  z-index: 2;
-}
-.join-form .join-form-content .content-wrap {
-  background: #453789;
-  display: flex;
-  width: 100%;
-}
-.join-form .join-form-content .content-wrap > div {
-  width: 50%;
-  padding: 20px;
-  position: relative;
-}
-.join-form .join-form-content .content-wrap > div:first-child::before {
-  content: "";
-  border-right: 3px dashed #fff;
-  position: absolute;
-  right: 10px;
-  top: 20px;
-  height: calc(100% - 40px);
-}
-.join-form .join-form-text {
-  font-size: 14px;
-  line-height: 30px;
-  text-align: justify;
-}
-
-.process-flow {
   background: #000;
-  background-image: url(../images/process.jpeg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  z-index: 1;
-  color: #fff;
-}
-.process-flow::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.2784313725);
-  z-index: 1;
-}
-.process-flow .process-wrap {
-  position: relative;
-  z-index: 2;
-  min-height: 50vh;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.flow {
-  margin-top: 50px;
-  position: relative;
-  padding: 20px 0;
-}
-.flow::after {
-  content: "";
-  border-left: 6px dashed #fff;
-  height: 100%;
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: calc(50% - 3px);
-}
-.flow .flow-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 20px 0;
-  margin-bottom: 15px;
-}
-.flow .flow-item:nth-child(even) .flow-text {
-  right: 50%;
-  left: unset;
-  margin-right: 72px;
-  margin-left: unset;
-  text-align: right;
-}
-.flow .flow-circle {
-  width: 36px;
-  height: 36px;
-  border-radius: 50px;
-  background: red;
-  position: relative;
-  z-index: 2;
-}
-.flow .flow-text {
-  position: absolute;
-  background: blue;
-  padding: 20px;
-  border-radius: 10px;
-  left: calc(50% + 72px);
-}
-
-.fotter {
-  background: #fff;
-  padding: 50px 0;
-  text-align: right;
-}/*# sourceMappingURL=layout.css.map */
+}/*# sourceMappingURL=個人端末.css.map */

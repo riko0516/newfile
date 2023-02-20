@@ -1,0 +1,68 @@
+@import 'reset';
+
+body {
+    background: brown;
+}
+
+.header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+
+    .header-content {
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+
+        li {
+            margin-left: 10px;
+            text-align: center;
+            font-size: 700;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        .en {
+            font-size: 12px;
+            font-family: monospace;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.traveling-form {
+    color: #fff;
+    background: #000;
+    background-image: url(../images/firstbackground.jpeg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #000;
+        position: absolute;
+        z-index: 1;
+    }
+}
