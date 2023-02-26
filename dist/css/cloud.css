@@ -161,7 +161,7 @@ body {
 }
 .cloud.S1 {
   transform: translate(10%, 15vh);
-  animation-name: move;
+  animation-name: move-1;
   animation-duration: 2s;
 }
 .cloud.S2 {
@@ -174,7 +174,7 @@ body {
   animation-name: move-3;
   animation-duration: 4s;
 }
-.cloud.S1 {
+.cloud.S4 {
   transform: translate(50px, 35vh) scale(0.6);
   animation-name: move-4;
   animation-duration: 5s;
@@ -193,7 +193,7 @@ body {
     transform: translate(10%, 15vh);
   }
   to {
-    transform: translate(100%, 15vh);
+    transform: translate(250%, 15vh);
   }
 }
 @keyframes move-2 {
