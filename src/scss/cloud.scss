@@ -1,0 +1,118 @@
+@import 'reset';
+
+body {
+    background: rgb(102, 102, 221);
+    overflow: hidden;
+}
+
+.cloud {
+    width: 400px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10000px;
+    margin-top: 20px;
+    transform: translateX(10%) translateY(15vh);
+    position: relative;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-color: #fff;
+        top: -33px;
+        left: 55px;
+    }
+
+    &::before {
+        content: '';
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background-color: #fff;
+        position: absolute;
+        top: -94px;
+        left: 141px;
+    }
+
+    &.S1 {
+        transform: translate(10%, 15vh);
+        animation-name: move;
+        animation-duration: 2s;
+    }
+
+
+    &.S2 {
+        transform: translate(100px, 25vh) scale(0.8);
+        animation-name: move-2;
+        animation-duration: 7s;
+    }
+
+
+    &.S3 {
+        transform: translate(150px, 25vh) scale(0.2);
+        animation-name: move-3;
+        animation-duration: 4s;
+    }
+
+
+    &.S1 {
+        transform: translate(50px, 35vh) scale(0.6);
+        animation-name: move-4;
+        animation-duration: 5s;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(100%, 0);
+    }
+}
+
+@keyframes move-1 {
+    from {
+        transform: translate(10%, 15vh);
+    }
+
+    to {
+        transform: translate(100%, 15vh);
+    }
+}
+
+@keyframes move-2 {
+    from {
+        transform: translate(100px, 25vh) scale(0.8);
+    }
+
+    to {
+        transform: translate(100%, 25vh) scale(0.8);
+    }
+}
+
+@keyframes move-3 {
+    from {
+        transform: translate(150px, 25vh) scale(0.2);
+    }
+
+    to {
+        transform: translate(100%, 25vh) scale(0.2);
+    }
+}
+
+@keyframes move-4 {
+    from {
+        transform: translate(50px, 35vh) scale(0.6);
+    }
+
+    to {
+        transform: translate(100%, 35vh) scale(0.6);
+    }
+}

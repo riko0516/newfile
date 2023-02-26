@@ -1,0 +1,40 @@
+@import 'reset';
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.active {
+        animation-name: move;
+        animation-duration: 3s;
+        transform: translate(80%);
+        background-color: #9d84e9;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0);
+        background-color: #000;
+    }
+
+    20% {
+        transform: translate(80%) rotate(45dge);
+    }
+
+    50% {
+        transform: translate(40% 300px) rotate(45dge);
+        background-color: #e83232;
+    }
+
+    100% {
+        transform: translate(80%);
+        background-color: #9d84e9;
+    }
+}
