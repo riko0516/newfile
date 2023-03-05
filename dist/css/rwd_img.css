@@ -123,63 +123,18 @@ a {
   display: inline-block;
 }
 
-.block {
-  width: 200px;
-  height: 200px;
-  background: #d58686;
-  color: #fff;
-  transition-property: all;
-  transition-duration: 2s;
-  transition-timing-function: ease;
+.image-block {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
 }
-.block > label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.fluid-image img {
   width: 100%;
-  height: 100%;
-  cursor: pointer;
+  height: auto;
 }
 
-#switch-status {
-  display: none;
-}
-#switch-status:checked ~ func-block > label.run {
-  display: none;
-}
-#switch-status:checked ~ func-block > label.back {
-  display: inline;
-}
-#switch-status ~ .block {
-  background: #1d4fb9;
-  font-size: 30px;
-  left: 50%;
-}
-
-.func-block {
-  margin-top: 20px;
-}
-.func-block > label {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  padding: 10px 20px;
-  background-color: #dedede;
-  font-weight: 800;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.func-block > label.run {
-  background-color: #b3d1e9;
-  color: #fff;
-}
-.func-block > label.run:hover {
-  background-color: #d58686;
-}
-.func-block > label.back {
-  background-color: #b3d1e9;
-  color: #fff;
-}
-.func-block > label.back:hover {
-  background-color: #d58686;
-}/*# sourceMappingURL=transition.css.map */
+.fluid-image-max img {
+  max-width: 100%;
+  height: auto;
+}/*# sourceMappingURL=rwd_img.css.map */
