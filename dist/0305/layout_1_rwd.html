@@ -21,7 +21,8 @@
                         <img src="../images/logo.svg" alt="">
                     </a>
                 </div>
-                <div class="menu extend">
+                <!-- <div class="menu extend"> -->
+                <div class="menu popup">
                     <ul>
                         <li>
                             <a href="#">
@@ -133,5 +134,21 @@
         </div>
     </div>
 </body>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+
+<script>
+    let popupMenu = document.querySelector('.menu.popup');
+    if (popupMenu) {
+        popupMenu.addEventListener('click', () => {
+            let sw = document.querySelector('#mobile-menu-switch');
+            sw && sw.click();
+        });
+    }
+</script>
 
 </html>
