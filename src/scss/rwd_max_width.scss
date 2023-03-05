@@ -7,12 +7,6 @@
     margin-top: 10px;
 }
 
-@media screen and (max-width: 600px) {
-    .block {
-        background: red;
-    }
-}
-
 @media screen and (max-width: 800px) {
     .block {
         background: blue;
@@ -20,8 +14,8 @@
     }
 }
 
-// @media screen and (max-width: 600px) {
-//     .block {
-//         background: red;
-//     }
-// }
+@media screen and (max-width: 600px) {
+    .block {
+        background: red;
+    }
+}

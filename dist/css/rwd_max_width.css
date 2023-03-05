@@ -130,14 +130,14 @@ a {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .block {
-    background: red;
-  }
-}
 @media screen and (max-width: 800px) {
   .block {
     background: blue;
     color: white;
+  }
+}
+@media screen and (max-width: 600px) {
+  .block {
+    background: red;
   }
 }/*# sourceMappingURL=rwd_max_width.css.map */
