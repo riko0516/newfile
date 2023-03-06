@@ -1,4 +1,4 @@
-@import 'reset';
+@import 'reset個人末端用';
 
 body {
     background: brown;
@@ -9,16 +9,15 @@ body {
     width: 100%;
     position: fixed;
     z-index: 9;
+    margin-top: 15px;
 
     .header-content {
-        background: rgb(255, 255, 255);
+        background: rgba(255, 255, 255, 0.86);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        border-radius: 10px;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
+        border-radius: 20px;
     }
 
     .menu {
@@ -47,10 +46,10 @@ body {
     }
 }
 
-.traveling-form {
+.travel-form {
     color: #fff;
     background: #000;
-    background-image: url(../images/firstbackground.jpeg);
+    background-image: url(../images/鬱金香.jpg);
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -61,8 +60,42 @@ body {
         height: 100%;
         top: 0;
         left: 0;
-        background: #000;
+        background: #00000051;
         position: absolute;
         z-index: 1;
+    }
+
+    .travel-form-content {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        position: relative;
+        z-index: 2;
+
+        .content-wrap {
+            background: rgba(132, 120, 104, 0.9);
+            display: flex;
+            width: 100%;
+            border-radius: 20px;
+
+            >div {
+                width: 50%;
+                padding: 20px;
+            }
+
+            .right-side-pic {
+                background-image: url(../images/海港.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 100%;
+                transition: 3s;
+            }
+        }
+    }
+
+    .travel-form-text {
+        font-size: 14px;
+        line-height: 30px;
+        text-align: justify;
     }
 }
