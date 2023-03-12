@@ -22,6 +22,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  flex: 1;
 }
 
 .slogan {
@@ -124,6 +125,7 @@ body {
   position: fixed;
   z-index: 9;
   margin-top: 15px;
+  flex: 1;
 }
 .header .header-content {
   background: rgba(255, 255, 255, 0.86);
