@@ -160,6 +160,7 @@ body {
         position: relative;
         padding: 20px 0;
         margin-bottom: 15px;
+        z-index: 2;
 
         &:nth-child(even) {
             .flow-text {
