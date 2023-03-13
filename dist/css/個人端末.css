@@ -159,7 +159,7 @@ body {
 .travel-form {
   color: #fff;
   background: #000;
-  background-image: url(../images/鬱金香.jpg);
+  background-image: url(../images/個人末端用/鬱金香.jpg);
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -192,7 +192,7 @@ body {
   padding: 20px;
 }
 .travel-form .travel-form-content .content-wrap .right-side-pic {
-  background-image: url(../images/海港.jpg);
+  background-image: url(../images/個人末端用/海港.jpg);
   background-position: center;
   background-size: cover;
   height: 100%;
