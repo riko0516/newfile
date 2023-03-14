@@ -12,6 +12,50 @@ body {
     scroll-behavior: smooth;
 }
 
+.header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    margin-top: 15px;
+    flex: 1;
+
+    .header-content {
+        background: rgba(255, 255, 255, 0.86);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+
+        li {
+            margin-left: 10px;
+            text-align: center;
+            font-size: 700;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        .en {
+            font-size: 12px;
+            font-family: monospace;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
 .container {
     width: 80%;
     height: 100%;

@@ -1,15 +1,53 @@
-@import 'reset';
+@import 'reset個人末端用';
 
-.product-block {
+.container2 {
+    background-color: #f3eeee;
+}
+
+.sticker-block {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+
+    .ch {
+        width: 100%;
+        height: 50px;
+        background-color: #f3eeee;
+        color: #898989;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    .en {
+        width: 100%;
+        height: 50px;
+        background-color: #f3eeee;
+        color: #898989;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    .hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        transition: rotate(90deg);
+    }
+
 }
 
 .product {
-    width: 300px;
+    width: 350px;
     min-height: 200px;
-    background: #dedede;
+    background: #f3eeee;
     padding: 10px;
     margin: 0 10px;
     margin-bottom: 10px;
@@ -17,7 +55,7 @@
 
 .product-image {
     width: 100%;
-    height: 200px;
+    height: 350px;
     background-color: #f38d8d;
     color: #fff;
     display: flex;
@@ -27,7 +65,7 @@
     overflow: hidden;
 
     .product-image-warp {
-        background-image: url(../images/個人末端用/0119場景.jpeg);
+        background-image: url(../images/cake.jpg);
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -38,6 +76,7 @@
 
 .product-content {
     margin-top: 20px;
+    text-align: center;
 
     .product-title {
         font-size: 20px;

@@ -13,6 +13,43 @@ body {
   scroll-behavior: smooth;
 }
 
+.header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  margin-top: 15px;
+  flex: 1;
+}
+.header .header-content {
+  background: rgba(255, 255, 255, 0.86);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+.header .menu {
+  list-style-type: none;
+  display: flex;
+}
+.header .menu li {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 700;
+}
+.header .menu li:first-child {
+  margin-left: 0;
+}
+.header .menu li:hover {
+  color: #fff;
+}
+.header .menu .en {
+  font-size: 12px;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
 .container {
   width: 80%;
   height: 100%;
@@ -117,43 +154,6 @@ a {
 
 body {
   background: brown;
-}
-
-.header {
-  top: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 9;
-  margin-top: 15px;
-  flex: 1;
-}
-.header .header-content {
-  background: rgba(255, 255, 255, 0.86);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border-radius: 20px;
-}
-.header .menu {
-  list-style-type: none;
-  display: flex;
-}
-.header .menu li {
-  margin-left: 10px;
-  text-align: center;
-  font-size: 700;
-}
-.header .menu li:first-child {
-  margin-left: 0;
-}
-.header .menu li:hover {
-  color: #fff;
-}
-.header .menu .en {
-  font-size: 12px;
-  font-family: monospace;
-  text-transform: uppercase;
 }
 
 .travel-form {
