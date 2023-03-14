@@ -34,33 +34,6 @@
         height: 100%;
         transition: 3s;
     }
-
-    .discount-bar {
-        background: #f38d8d;
-        width: 100%;
-        height: 40px;
-        font-size: 18px;
-        font-weight: 700;
-        font-family: 'Merriweather', serif;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        transform: rotate(45deg);
-        right: -112px;
-        top: 16px;
-    }
-
-    &:hover {
-        .product-image-warp {
-            transform: scale(1.5);
-        }
-
-        .discount-bar {
-            background-color: aquamarine;
-            color: #f38d8d;
-        }
-    }
 }
 
 .product-content {
