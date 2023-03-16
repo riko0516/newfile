@@ -27,11 +27,13 @@ body {
         align-items: center;
         padding: 20px;
         border-radius: 20px;
-        // height: 120px;
+        height: 100px;
 
-        // background-position: left;
-        // background-size: cover;
-        // height: 100%;
+        img,
+        svg {
+            vertical-align: middle;
+            height: 70px;
+        }
     }
 
     .menu {

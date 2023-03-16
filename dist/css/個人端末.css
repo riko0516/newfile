@@ -28,6 +28,12 @@ body {
   align-items: center;
   padding: 20px;
   border-radius: 20px;
+  height: 100px;
+}
+.header .header-content img,
+.header .header-content svg {
+  vertical-align: middle;
+  height: 70px;
 }
 .header .menu {
   list-style-type: none;
