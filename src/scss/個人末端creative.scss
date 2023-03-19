@@ -2,12 +2,15 @@
 
 .container2 {
     background-color: #f3eeee;
+
 }
 
 .sticker-block {
     margin-top: 135px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 
     .ch {
         width: 100%;
@@ -33,17 +36,14 @@
     }
 
     .hr {
-        box-sizing: content-box;
+        width: 85%;
         height: 0;
-        overflow: visible;
-        margin-top: 1rem;
         margin-bottom: 1rem;
-        border: 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        transition: rotate(90deg);
+        border-top: 1px solid rgb(179 178 178 / 50%);
     }
-
 }
+
+
 
 .product {
     width: 350px;
