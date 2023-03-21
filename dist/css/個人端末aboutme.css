@@ -188,7 +188,7 @@ body {
 .travel-form .travel-form-content {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: 115vh;
   position: relative;
   z-index: 2;
 }
