@@ -54,7 +54,7 @@ body {
   margin-left: 0;
 }
 .header .menu li:hover {
-  color: #fff;
+  color: #c6bfbf;
 }
 .header .menu .en {
   font-size: 12px;
@@ -164,21 +164,38 @@ a {
   display: inline-block;
 }
 
+.index-footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #c1bcbc;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+}
+.index-footer .sns {
+  display: flex;
+}
+.index-footer .copyright {
+  font-size: 15px;
+}
+
 body {
-  background: brown;
+  background: #f3eeee;
 }
 
 .travel-form {
   color: #fff;
   background: #000;
   background-image: url(../images/個人末端用/鬱金香.jpg);
-  background-size: cover;
   position: relative;
-  height: 500px;
+  height: 150vh;
   background-position: center;
   background-size: cover;
-  /* image-orientation: inherit; */
-  height: -3%;
   z-index: 1;
 }
 .travel-form::after {
@@ -191,47 +208,60 @@ body {
   position: absolute;
   z-index: 1;
 }
-.travel-form .travel-form-content {
+
+.travel-form-content {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: 30vh;
   position: relative;
   z-index: 2;
 }
-.travel-form .travel-form-content .content-wrap {
+
+.travel-form-content2 {
+  display: flex;
+  align-items: center;
+  min-height: 30vh;
+  position: relative;
+  z-index: 2;
+}
+
+.blockfortop {
+  margin-top: 135px;
+}
+
+.content-wrap {
   background: rgba(132, 120, 104, 0.9);
   display: flex;
   width: 100%;
   border-radius: 20px;
 }
-.travel-form .travel-form-content .content-wrap > div {
+.content-wrap > div {
   width: 50%;
   padding: 20px;
 }
-.travel-form .travel-form-content .content-wrap .right-side-pic {
+.content-wrap .left-side .travel-form-text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: justify;
+}
+.content-wrap .right-side-pic {
   background-image: url(../images/個人末端用/海港.jpg);
   background-position: center;
   background-size: cover;
   height: 100%;
   transition: 3s;
 }
-.travel-form .travel-form-text {
-  font-size: 14px;
-  line-height: 30px;
-  text-align: justify;
+.content-wrap .right-side-pic2 {
+  background-image: url(../images/個人末端用/海港.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  transition: 3s;
 }
-
-.footer {
-  width: 100%;
-  height: 50px;
-  background: #898989;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  color: #fff;
-}
-.footer .copyright {
-  font-size: 14px;
+.content-wrap .right-side-pic3 {
+  background-image: url(../images/個人末端用/海港.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  transition: 3s;
 }/*# sourceMappingURL=個人端末.css.map */
