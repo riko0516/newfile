@@ -67,7 +67,57 @@ createApp({
         save() {
             let data = JSON.stringify(this.items);
             localStorage.setItem(this.storageKey, data);
+        },
+        doSaveCloud() {
+            let uid = prompt('請輸入 uid');
+            if (!uid) {
+                return;
+            }
+
+            let params = {
+                action: 'todo',
+                uid: uid,
+                deta: this.items
+            }
+
+            let option = {
+                method: 'POST',
+                body: JSON.stringify(params),
+            }
+
+            fetch(this.api, options)
+                .then(response => {
+                    return response.text();
+                })
+                .then(data => {
+                    console.log(data);
+                })
+
+        },
+        doLoadCloud() {
+            Swal.fire({
+                title: '輸入 UID',
+                input: 'text',
+            }).then(rep => {
+                let uid = rep.value
+                console.log(uid);
+
+                if (!uid) {
+                    return;
+                }
+
+                let api = `${this.api}?action=todo&uid=${uid}`;
+                fetch(api)
+                    .then(response => {
+                        return response.text();
+                    })
+                    .then(data => {
+                        data = JSON.parse(data);
+                        this.items = data.data;
+                    })
+            })
         }
+
     },
     mounted() {
         this.restore();
