@@ -218,56 +218,6 @@ body {
   border-radius: 20px;
 }
 
-.me {
-  width: 100%;
-  height: 67vh;
-  background-image: url(../images/aboutmetop.jpg);
-  margin-top: 135px;
-  background-position: bottom;
-  background-size: cover;
-  z-index: 2;
-  position: absolute;
-}
-
-.travel {
-  color: #5c5a5a;
-  background-size: cover;
-  position: relative;
-  display: block;
-}
-.travel .travel-wrap {
-  display: flex;
-  align-items: center;
-  min-height: 200vh;
-  position: relative;
-}
-.travel .travel-wrap .travel-left-side {
-  width: 50%;
-  height: 200px;
-  padding: 40px;
-}
-.travel .travel-wrap .travel-left-side .travel-slogan {
-  font-size: 40px;
-  font-weight: 600;
-  margin-top: 65px;
-}
-.travel .travel-wrap .travel-left-side .toptext {
-  font-size: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.travel .travel-wrap .travel-left-side .downtext {
-  margin-top: 190px;
-}
-.travel .travel-wrap .right-side-pic {
-  width: 40%;
-  height: 218px;
-  background-image: url(../images/travel-right-side-pic.jpg);
-  margin-top: 135px;
-  background-position: right;
-  background-size: cover;
-  position: absolute;
-}
-
 .info {
   height: 100vh;
   display: flex;
@@ -296,4 +246,4 @@ body {
   letter-spacing: 1px;
   margin-bottom: 10px;
   font-weight: 500;
-}/*# sourceMappingURL=個人端末aboutme.css.map */
+}/*# sourceMappingURL=個人端末homepage.css.map */
