@@ -256,15 +256,15 @@ a {
 .product {
   width: 350px;
   min-height: 200px;
-  background: #f3eeee;
+  background: #e9e5e1;
   padding: 10px;
   margin: 0 10px;
   margin-bottom: 50px;
 }
 .product .product-image {
   width: 100%;
-  height: 350px;
-  background-color: #f38d8d;
+  height: 285px;
+  background-color: #fff;
   color: #fff;
   display: flex;
   align-items: center;
@@ -272,19 +272,63 @@ a {
   position: relative;
   overflow: hidden;
 }
-.product .product-image .product-image-warp {
-  background-image: url(../images/cake.jpg);
-  background-position: center;
-  background-size: cover;
+.product .product-image .product-image-warp1 {
+  background-image: url(../images/sticker-1.jpg);
+  background-position: right;
+  background-size: contain;
   width: 100%;
   height: 100%;
   transition: 3s;
   z-index: 2;
 }
-.product .product-image .product-image-warp:hover {
+.product .product-image .product-image-warp1:hover {
   cursor: pointer;
 }
-.product .product-image .product-image-warp3-1 {
+.product .product-image .product-image-warp2 {
+  background-image: url(../images/sticker-2.jpg);
+  background-position: right;
+  background-size: contain;
+  width: 100%;
+  height: 99%;
+  transition: 3s;
+  z-index: 2;
+}
+.product .product-image .product-image-warp2:hover {
+  cursor: pointer;
+}
+.product .product-image .product-image-warp3 {
+  background-image: url(../images/sticker-3.jpg);
+  background-position: right;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  transition: 3s;
+  z-index: 2;
+}
+.product .product-image .product-image-warp3:hover {
+  cursor: pointer;
+}
+
+.product2 {
+  width: 350px;
+  min-height: 200px;
+  background: #f3eeee;
+  padding: 10px;
+  margin: 0 10px;
+  margin-bottom: 50px;
+}
+.product2 .product-image2 {
+  width: 100%;
+  height: 350px;
+  background-color: #fff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.product2 .product-image2 .product-image-warp3-1 {
   background-image: url(../images/TOP1.jpg);
   background-position: center;
   background-size: cover;
@@ -293,7 +337,7 @@ a {
   transition: 3s;
   z-index: 2;
 }
-.product .product-image .product-image-warp3-2 {
+.product2 .product-image2 .product-image-warp3-2 {
   background-image: url(../images/TOP2.jpg);
   background-position: center;
   background-size: cover;
@@ -302,7 +346,7 @@ a {
   transition: 3s;
   z-index: 2;
 }
-.product .product-image .product-image-warp3-3 {
+.product2 .product-image2 .product-image-warp3-3 {
   background-image: url(../images/TOP3.jpg);
   background-position: center;
   background-size: cover;

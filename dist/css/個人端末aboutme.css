@@ -220,7 +220,7 @@ body {
 
 .me {
   width: 100%;
-  height: 67vh;
+  height: 550px;
   background-image: url(../images/aboutmetop.jpg);
   margin-top: 135px;
   background-position: bottom;
@@ -234,14 +234,15 @@ body {
   background-size: cover;
   position: relative;
   display: flex;
-  height: 150vh;
+  height: 145vh;
 }
 .travel .travel-wrap {
   display: flex;
   align-items: center;
   position: relative;
   width: 100%;
-  height: 180vh;
+  margin-top: 40vh;
+  height: 100vh;
 }
 .travel .travel-wrap .travel-left-side {
   width: 50%;
@@ -290,10 +291,11 @@ body {
 .coffee .coffee-wrap {
   display: flex;
   align-items: center;
-  min-height: 80vh;
+  min-height: 45vh;
   position: relative;
-  margin-inline: 5px;
+  margin-inline: 8px;
   padding: 5px;
+  margin-top: 140px;
 }
 .coffee .coffee-wrap .coffee-left-side-pic {
   width: 30%;
@@ -313,7 +315,7 @@ body {
   display: flex;
 }
 .coffee .coffee-wrap .coffee-right-side {
-  margin-top: 100px;
+  margin-top: 80px;
   padding: 10px;
 }
 .coffee .coffee-wrap .coffee-right-side .coffee-slogan {

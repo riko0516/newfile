@@ -193,7 +193,7 @@ body {
   background: #000;
   background-image: url(../images/個人末端用/鬱金香.jpg);
   position: relative;
-  height: 150vh;
+  height: 110vh;
   background-position: center;
   background-size: cover;
   z-index: 1;
@@ -210,58 +210,62 @@ body {
 }
 
 .travel-form-content {
-  display: flex;
-  align-items: center;
-  min-height: 30vh;
+  min-height: 33vh;
   position: relative;
   z-index: 2;
-}
-
-.travel-form-content2 {
   display: flex;
-  align-items: center;
-  min-height: 30vh;
-  position: relative;
-  z-index: 2;
+  align-content: center;
+  justify-content: center;
 }
 
-.blockfortop {
+#blockfortop {
   margin-top: 135px;
 }
 
 .content-wrap {
-  background: rgba(132, 120, 104, 0.9);
+  background: rgba(168, 162, 155, 0.95);
   display: flex;
   width: 100%;
   border-radius: 20px;
+  margin-top: 20px;
 }
 .content-wrap > div {
   width: 50%;
   padding: 20px;
 }
 .content-wrap .left-side .travel-form-text {
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.content-wrap .left-side .travel-form-text2 {
+  font-size: 15px;
   line-height: 30px;
   text-align: justify;
 }
 .content-wrap .right-side-pic {
-  background-image: url(../images/個人末端用/海港.jpg);
+  background-image: url(../images/life-1.jpg);
   background-position: center;
   background-size: cover;
   height: 100%;
   transition: 3s;
+  border-radius: 15px;
 }
 .content-wrap .right-side-pic2 {
-  background-image: url(../images/個人末端用/海港.jpg);
+  background-image: url(../images/life-2.jpg);
   background-position: center;
   background-size: cover;
   height: 100%;
   transition: 3s;
+  border-radius: 15px;
 }
 .content-wrap .right-side-pic3 {
-  background-image: url(../images/個人末端用/海港.jpg);
+  background-image: url(../images/bicycle.jpg);
   background-position: center;
   background-size: cover;
   height: 100%;
   transition: 3s;
+  border-radius: 15px;
 }/*# sourceMappingURL=個人端末.css.map */
