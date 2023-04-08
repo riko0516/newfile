@@ -4,7 +4,6 @@
     background-color: #f3eeee;
 
     .sticker-block {
-        margin-top: 135px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -39,10 +38,10 @@
     background-color: #e3dfd9;
 
     .sticker-block3 {
+        margin-top: 135px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        // margin-top: 5px;
     }
 }
 
@@ -200,7 +199,8 @@
 
 
 .product-content {
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     text-align: center;
 
     .product-title {
