@@ -291,7 +291,6 @@ body {
   margin-top: 135px;
   background-position: bottom;
   background-size: cover;
-  position: absolute;
   display: block;
 }
 
@@ -300,15 +299,14 @@ body {
   background-size: cover;
   position: relative;
   display: flex;
-  height: 145vh;
+  height: 55vh;
 }
 .travel .travel-wrap {
   display: flex;
   align-items: center;
   position: relative;
   width: 100%;
-  margin-top: 40vh;
-  height: 100vh;
+  height: 10vh;
 }
 .travel .travel-wrap .travel-left-side {
   width: 50%;
